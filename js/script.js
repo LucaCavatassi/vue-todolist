@@ -8,6 +8,10 @@ const { createApp } = Vue;
 createApp ({
     data(){
         return {
+            newToDo: {
+                text: "",
+                done: false,
+            },
             allToDo: [
                 {
                     text: "Quarterly Newsletter",
@@ -41,7 +45,11 @@ createApp ({
         }
     },
     methods: {
-
+        addToTask: function () {
+            const toDoCopy = this.newToDo
+            this.allToDo.push({...toDoCopy})
+            this.newToDo.text = ""
+        }
     }
 }).mount("#app")
 

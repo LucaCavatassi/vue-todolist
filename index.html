@@ -22,8 +22,8 @@
             <div class="container">
                 <!-- input -->  
                 <div class="input-box">
-                    <input class="inputdata roundedbrdr" type="text" placeholder="es. Fare la spesa...">
-                    <button class="inputdata roundedbrdr osblue whitetext">Add Task</button>
+                    <input class="inputdata roundedbrdr" type="text" placeholder="es. Fare la spesa..." v-model="newToDo.text">
+                    <button @click="addToTask"class="inputdata roundedbrdr osblue whitetext">Add Task</button>
                 </div>        
                 <!-- /input -->
 
