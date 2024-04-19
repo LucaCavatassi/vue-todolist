@@ -26,20 +26,19 @@
                     <button class="inputdata roundedbrdr osblue whitetext">Add Task</button>
                 </div>        
                 <!-- /input -->
-                <!-- lists -->
-                <ul class="alltasklist">
 
-                    <li class="spacing">&#10148; <strong>TASKS</strong>
+                <!-- list -->
+                <div class="alltasklist">
+                    <h3 class="spacing-h1">&#10148; <strong>TASKS</strong></h3>
                         <!-- alltask -->
-                        <ul>
-                            <li v-for="item in allToDo" class="taskbox roundedbrdr greytext"> 
-                                <span :class="(item.done === true) ? 'completed' : 'uncompleted'" class="round">{{item.done === true ? '&check;' : '&cross;'}}</span>
-                                <span :class="(item.done === true) ? 'done' : ''" class="check-spacing">{{item.text}}</span>
-                            </li>
-                        </ul>
-                        <!-- /alltask -->
-                    </li>
-                </ul>
+                    <ul class="spacing">
+                        <li v-for="item in allToDo" class="taskbox roundedbrdr greytext"> 
+                            <span :class="(item.done === true) ? 'completed' : 'uncompleted'" class="round">{{item.done === true ? '&check;' : '&cross;'}}</span>
+                            <span :class="(item.done === true) ? 'done' : ''" class="check-spacing">{{item.text}}</span>
+                        </li>
+                    </ul>
+                    <!-- /alltask -->
+                </div>
                 <!-- /lists -->
             </div>
         </main>
