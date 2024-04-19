@@ -1,0 +1,134 @@
+/* COMMON */
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* COMMON ELEMENTS BORDERS */
+.roundedbrdr{
+    border-radius: 5px;  
+}
+
+/* COMMON TAG STYLE */
+.tag{
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+/* COMMON TAG-COLORS */
+.osblue{
+    background-color: rgb(23 170 245);
+}
+.purple{
+    background-color: blueviolet;
+}
+.aqua{
+    background-color: rgb(46 198 171);
+}
+.orange{
+    background-color: orange;
+}
+.pink{
+    background-color: hotpink;
+}
+.green{
+    background-color:lawngreen;
+}
+
+/* COMMON TEXT COLOR AND STYLE */
+
+.whitetext {
+    color: white;
+}
+.greytext {
+    color: grey;
+}
+
+.done{
+    text-decoration: line-through;
+}
+
+/* COMMON LIST STYLE */
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+
+/* COMMON BOX AND SPACING */
+.taskbox{
+    background-color: white;
+    line-height: 35px;
+    padding: 0 20px;
+    margin: 10px 0px;
+    box-shadow: 0px 10px 20px -5px lightgray;
+}
+
+.spacing{
+    padding-bottom: 30px;
+}
+
+/*  COMMON COMPLETED TASK & UNCOMPLETED TASK  */
+.check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    line-height: 15px;
+    text-align: center;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.completed{
+    color: rgb(46 198 171);
+    border: 1px solid rgb(46 198 171);
+}
+.uncompleted{
+    color: red;
+    border: 1px solid red;
+}
+
+
+/* HEADER */
+header{
+    text-align: center;
+    background-color: rgb(237 242 246);
+    box-shadow: 0px 10px 20px -5px lightgrey;
+}
+
+/* MAIN */
+.container{
+    background-color: rgb(237 242 246);
+    width: 70%;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px -5px lightgray;
+}
+
+
+/* INPUT BOX */
+.input-box{
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+.inputdata{
+    padding: 10px;
+    box-shadow: 0px 10px 20px -5px lightgray;
+    border: hidden;
+}
+
+input{
+    width: 20em;
+}
+
+/* LISTS */
+.alltasklist{
+    margin: 10% 10%;
+
+}
+

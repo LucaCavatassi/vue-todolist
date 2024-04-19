@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toboolist</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- VUEJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- header -->
+        <header>
+            <img src="./img/logo.png" alt="Toboolist Logo">
+        </header>
+        <!-- /header -->
+
+        <!-- main -->
+        <main>
+            <div class="container">
+                <!-- input -->  
+                <div class="input-box">
+                    <input class="inputdata roundedbrdr" type="text" placeholder="es. Fare la spesa...">
+                    <button class="inputdata roundedbrdr osblue whitetext">Add Task</button>
+                </div>        
+                <!-- /input -->
+                <!-- lists -->
+                <ul class="alltasklist">
+
+                    <li class="spacing">&#10148; <strong>TASK PRECEDENTI</strong>
+                        <!-- task precedenti -->
+                        <ul>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Quarterly Newsletter</span>
+                            </li>
+                        </ul>
+                        <!-- /task precedenti -->
+                    </li>
+
+                    <li class="spacing">&#10148; <strong>OGGI</strong>
+                        <!-- oggi -->
+                        <ul>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Recruiting blog post</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Mobile App Launch</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check uncompleted">&cross;</span>
+                                <span>Interview John H.</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Summit update to mobile storefronts</span>
+                            </li>
+                        </ul>
+                        <!-- /oggi -->
+                    </li>
+
+
+                    <li class="spacing">&#10148; <strong>PROSSIMI GIORNI</strong>
+                        <!-- next -->
+                        <ul>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check uncompleted">&cross;</span>
+                                <span> Schedule meeting with Alex</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Homepage refresh</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Onboard new Sales team member</span>
+                            </li>
+                            <li class="taskbox roundedbrdr greytext"> 
+                                <span class="check completed">&check;</span>
+                                <span class="done">Recruiting Editorial Calendar</span>
+                            </li>
+                        </ul>
+                        <!-- /next -->
+                    </li>
+                </ul>
+                <!-- /lists -->
+            </div>
+        </main>
+        <!-- /main -->
+    </div>
+  
+</body>
+</html>
