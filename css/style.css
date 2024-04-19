@@ -71,8 +71,12 @@ ul{
     padding-bottom: 30px;
 }
 
+.check-spacing{
+    padding-left: 10px;
+}
+
 /*  COMMON COMPLETED TASK & UNCOMPLETED TASK  */
-.check{
+.round{
     display: inline-block;
     width: 15px;
     height: 15px;

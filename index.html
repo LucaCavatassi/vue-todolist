@@ -29,62 +29,15 @@
                 <!-- lists -->
                 <ul class="alltasklist">
 
-                    <li class="spacing">&#10148; <strong>TASK PRECEDENTI</strong>
-                        <!-- task precedenti -->
+                    <li class="spacing">&#10148; <strong>TASKS</strong>
+                        <!-- alltask -->
                         <ul>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Quarterly Newsletter</span>
+                            <li v-for="item in allToDo" class="taskbox roundedbrdr greytext"> 
+                                <span :class="(item.done === true) ? 'completed' : 'uncompleted'" class="round">{{item.done === true ? '&check;' : '&cross;'}}</span>
+                                <span :class="(item.done === true) ? 'done' : ''" class="check-spacing">{{item.text}}</span>
                             </li>
                         </ul>
-                        <!-- /task precedenti -->
-                    </li>
-
-                    <li class="spacing">&#10148; <strong>OGGI</strong>
-                        <!-- oggi -->
-                        <ul>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Recruiting blog post</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Mobile App Launch</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check uncompleted">&cross;</span>
-                                <span>Interview John H.</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Summit update to mobile storefronts</span>
-                            </li>
-                        </ul>
-                        <!-- /oggi -->
-                    </li>
-
-
-                    <li class="spacing">&#10148; <strong>PROSSIMI GIORNI</strong>
-                        <!-- next -->
-                        <ul>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check uncompleted">&cross;</span>
-                                <span> Schedule meeting with Alex</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Homepage refresh</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Onboard new Sales team member</span>
-                            </li>
-                            <li class="taskbox roundedbrdr greytext"> 
-                                <span class="check completed">&check;</span>
-                                <span class="done">Recruiting Editorial Calendar</span>
-                            </li>
-                        </ul>
-                        <!-- /next -->
+                        <!-- /alltask -->
                     </li>
                 </ul>
                 <!-- /lists -->
