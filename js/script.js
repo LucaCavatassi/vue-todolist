@@ -49,9 +49,14 @@ createApp ({
             const toDoCopy = this.newToDo
             this.allToDo.push({...toDoCopy})
             this.newToDo.text = ""
+        },
+
+        removeFromTask: function (index){
+            this.allToDo.splice(index, 1)
         }
     }
 }).mount("#app")
 
 // in class if done = true allora completed else uncompleted 
 // in text if done = true allara &check; else &cross;
+// if index 
