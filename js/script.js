@@ -44,10 +44,23 @@ createApp ({
             ]
         }
     },
+    created () {
+        // richiamo dal localStorage
+        const localToDo = localStorage.getItem("toDo")
+        // assegno la costante al nuovo elemento
+        
+
+    },
+
     methods: {
         addToTask: function () {
             const toDoCopy = this.newToDo
             this.allToDo.push({...toDoCopy})
+
+            // salvo nel local storage
+            localStorage.setItem("toDo", JSON.stringify(toDoCopy));
+
+
             this.newToDo.text = ""
         },
 
@@ -59,4 +72,3 @@ createApp ({
 
 // in class if done = true allora completed else uncompleted 
 // in text if done = true allara &check; else &cross;
-// if index 
